@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "format": "prettier --write \"**/*.ts",
+    "prepare": "husky",
+    "start": "ts-node ./src/index.ts",
+    "start:prod": "npm run build && node dist/index.js",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.1",
+    "husky": "^9.1.5",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  }
+}
